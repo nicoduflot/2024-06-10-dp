@@ -1,0 +1,32 @@
+# yml :  fichier formaté de config : 
+#       - une ligne, une entrée, un retour chariot et une taulation : une sous entrée
+# commentaire en yml
+# nom du thème : le nom du répertoire dans lequel on crée le thème
+name: mon theme
+# le type de module que l'on crée : les thèmes sont des extensions de type theme
+# les modules eux sont des extensions de type module
+type: theme
+description: 'mon theme sur la base de <b>starterkit</b>'
+# la version minimale avec laquelle le thème va fonctionner
+core_version_requirement: ^9 || ^10
+# thème de base : thème sur lequel va s'appuyer la structure de base des modèles twig
+'base theme': starterkit_theme
+# le logo par défaut du thème
+logo: 'images/discworld-logo-white.svg'
+
+#déclaration des librairies
+libraries:
+  - montheme/general
+#déclaration des régions
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  breadcrumb: 'Breadcrumb'
+  secondary_menu: 'Secondary menu'
+  highlighted: 'Highlighted'
+  custom_region: 'Custom Region'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Left sidebar'
+  sidebar_second: 'Right sidebar'
+  footer: 'Footer'

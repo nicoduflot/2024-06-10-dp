@@ -1,0 +1,12 @@
+ul.h-list{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+ul.h-list > li{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
