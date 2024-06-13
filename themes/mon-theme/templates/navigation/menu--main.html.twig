@@ -30,25 +30,39 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass('menu') }}>
+      {# <ul{{ attributes.addClass('menu') }}> #}
+      <ul{{ attributes.addClass('navbar-nav', 'me-auto', 'mb-2', 'mb-lg-0') }}>
     {% else %}
-      <ul class="menu">
+      <ul class="dropdown-menu">
     {% endif %}
     {% for item in items %}
       {%
         set classes = [
           'menu-item',
+          'nav-item',
           item.is_expanded ? 'menu-item--expanded',
           item.is_collapsed ? 'menu-item--collapsed',
           item.in_active_trail ? 'menu-item--active-trail',
         ]
       %}
+      {#
       <li{{ item.attributes.addClass(classes) }}>
-        {{ link(item.title, item.url) }}
+        {{ link(item.title, item.url, { 'class':['nav-link'] }) }}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% endif %}
       </li>
+      #}
+      {% if item.below %}
+        <li class="nav-item dropdown">
+          {{ link(item.title, item.url, { 'class':['nav-link','dropdown-toggle'], 'data-bs-toggle': 'dropdown', 'aria-expanded': 'false' }) }}
+          {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+        </li>
+      {% else %}
+        <li class="nav-item">
+          {{ link(item.title, item.url, { 'class':['nav-link'] }) }}
+        </li>  
+      {% endif %}
     {% endfor %}
     </ul>
   {% endif %}
