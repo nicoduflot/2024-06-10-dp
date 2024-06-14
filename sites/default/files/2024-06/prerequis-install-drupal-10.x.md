@@ -78,9 +78,9 @@ Si cet outils est utilisé lors de la rédacrtion de contenu, le fichier qui ser
 Il faut alors modifier la barre d'outils de ces deux format de texte afin de remplacer l'outils image par l'outil Drupal Media
 
 1. aller dans Accueil > Administration > Configuration > Rédaction de contenu > Formats de texte et éditeurs
-2. - cliquer sur configurer pour les deux éditeurs
-3. - Cocher la case "intégrer un media"
-4. - remplacer dans la barre image par drupal media
+2. cliquer sur configurer pour les deux éditeurs
+3. Cocher la case "intégrer un media"
+4. remplacer dans la barre image par drupal media
 
 #### Configurer les alias d'url pour les type de contenu existants
 
