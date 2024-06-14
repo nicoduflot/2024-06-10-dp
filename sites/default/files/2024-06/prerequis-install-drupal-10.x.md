@@ -1,8 +1,8 @@
-Notes : 
+# Formation Drupal
 
-Installation
+## Installation
 
-Prérequis : 
+### Prérequis : 
 
 Un serveur web (apache) avec PHP et Bases de données
 
@@ -21,7 +21,7 @@ WAMP dans Disque d'installation de wamp\wamp64\www
 Mamp dans Disque d'installation de MAMP:\MAMP puis chercher un répertoire HTDOCS
 XAMPP dans Disque d'installation de XAMPP:\xampp\htdocs 
 
-Conseils
+### Conseils
 
 Si l'installation est sur un ordinateur local ou un serveur un peu casse pieds (protégé, firewall, etc)
 Préférer l'installer en anglais, on met en place la langue ensuite.
@@ -30,14 +30,14 @@ Si au contraire le fichiert cacert.pem et le SSH est configuré,
 il est possible de directement installer Drupal en français
 (la doc est en lien si l'installation en français plante)
 
-Extensions native a activer
+#### Extensions native a activer
 - Media
 - Media library
 - Configuration Translation
 - Interface Translation
 - Language
 
-Extensions pratiques recommandées pour commencer
+#### Extensions pratiques recommandées pour commencer
 
 - Admin toolbar
 	Activer les modules suivants : 
@@ -52,7 +52,7 @@ Extensions pratiques recommandées pour commencer
 - token
 - pathauto
 
-Changer la langue
+#### Changer la langue
 
 1 - 	ajouter la langue
 		Accueil > Administration > Configuration > Régionalisation et langue > Langues
